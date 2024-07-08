@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+     
+    background: linear-gradient(45deg,#dd35ca 0%, #0ea7cd 55%,#f5f5f5 100%  );
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+    border: 50px double red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation:anima 20s ease 0s infinite;
+   box-sizing: border-box;
+  
+}
+
+#boxces{
+    height: 250px;
+    width: 300px;
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+    top: -30px;
+
+      
+}
+
+.box{
+    height: 33%;
+    width: 34%;
+    background-color: transparent;
+    font-size: 50px;
+    border: 4px solid rgb(63, 43, 191);
+
+    animation: anima 20s ease-in-out 0s infinite ;
+}
+
+#btn{
+    position: relative;
+    top: -180px;
+    width: 200px;
+    height: 30px;
+    border: 2px dotted rgb(14, 4, 4);
+    background-color: rgb(255, 166, 255);
+    border-radius: 40px ;
+    color: white;
+    font-size: large;
+}
+
+#btn:active{
+background-color: blue;
+}
+#btn:hover{
+    background-color: rgb(0, 145, 255);
+    }
+    
+
+#result{
+position: relative;
+top: 180px;
+height: 90px;
+    width: 400px;
+    font-size: 30px;
+    color: rgb(255, 0, 140);
+}
+
+#box1{
+    border-top: none;
+    border-left:none ;
+}
+
+#box4{
+    border-top:none;
+}
+
+#box7{
+    border-top:none ;
+    border-right:none ;
+}
+
+#box2{
+    border-left: none;
+}
+
+#box8{
+    border-right:none ;
+}
+
+#box3,#box6,#box9{
+    border-bottom: none;
+
+}
+
+#box9{
+    border-right: none;
+}
+
+#box3{
+    border-left: none;
+}
+
+
+
+@keyframes anima{
+    0%{
+        border-color: white;
+    }
+    10%{
+        border-color: black;
+    }
+    20%{
+        border-color: red;
+    }
+    30%{
+        border-color: green;
+    }
+    40%{
+        border-color: yellow;
+    }
+    50%{
+        border-color: aqua;
+    }
+    60%{
+        border-color: palevioletred;
+    }
+    70%{
+        border-color:chartreuse;
+    }
+    80%{
+        border-color:rgb(0, 179, 255);
+    }
+    90%{
+        border-color:chocolate;
+    }
+    95%{
+        border-color:rgb(255, 71, 203);
+    }
+    100%{
+        border-color: rgb(120, 0, 255);
+    }
+}
+/* Spinner container */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Spinner element */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    right: 100px;
+    background-color: green;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.spinner-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Spinner element */
+.spinner2 {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 190px;
+    background-color: red;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#A{
+    position: relative;
+    left: -255px;
+    font-size: 50px;
+}
+
+#B{
+    font-size: 50px;
+    position: relative;
+    right: -15px;
+}
+
+#head{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    font-size: 60px;
+    color: white;
+    
+}
